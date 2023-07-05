@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700;800;900;1000&family=Pacifico&display=swap');
+
+:root {
+  --background: #F8F5F5;
+  --font-size-default: 19px;
+  --title: calc(2 * var(--font-size-default));
+  --subtitle: calc(1.5 * var(--font-size-default));
+  --text: calc(0.8 * var(--font-size-default));
+}
+
+html{
+  background-color: var(--background);
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 3em;
+  align-items: center;
+  padding-left: calc(10% - 20px);
+  padding-right: calc(10% - 20px);
+}
+
+@media (max-width: 900px) {
+  html, body, #root{
+    min-width: 100% !important;
+    box-sizing: border-box;
+  }
+}
